@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "name": "express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node src/app.js"
+  },
+  "devDependencies": {
+    "axios": "^1.7.2",
+    "express": "^4.19.2",
+    "hbs": "^4.2.0"
+  }
+}
