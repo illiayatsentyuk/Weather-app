@@ -7,7 +7,7 @@ const forecast = (place, lon, lat, callback) => {
     .then(({ data }) => {
       callback(
         undefined,
-        `It is currently ${data.current.temperature} degrees. There is ${data.current.humidity}% humidity!`
+        `It is currently ${data.current.temperature} degrees. There is ${data.current.humidity}% humidity! Feels like ${data.current.feelslike}`
       );
     })
     .catch((err) => callback("ERROR", undefined));
